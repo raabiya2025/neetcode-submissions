@@ -24,3 +24,60 @@ public:
         
     }
 };
+Pattern
+Binary Search
+
+Used when:
+
+Array is sorted
+Need fast searching
+Need to reduce search space repeatedly
+Key Observation
+
+Instead of checking every element:
+
+Linear Search -> O(n)
+
+Use sorted order to eliminate half the search space each step:
+
+Binary Search -> O(log n)
+Core Idea
+
+At every step:
+
+Find middle element
+
+If:
+
+target == nums[mid]
+
+Found.
+
+If:
+
+target < nums[mid]
+
+Search left half.
+
+If:
+
+target > nums[mid]
+
+Search right half.
+
+Important Formula
+Mid Index
+
+Preferred:
+
+int mid = low + (high - low) / 2;
+
+Avoid:
+
+int mid = (low + high) / 2;
+
+Reason:
+
+Possible integer overflow
+
+Interviewers like the first version.
