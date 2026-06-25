@@ -27,3 +27,28 @@ public:
         return st.empty();
     }
 };
+Complexity
+Time Complexity
+
+Each bracket:
+
+pushed once
+popped once
+O(n)
+Space Complexity
+
+Worst case:
+
+((((((((
+
+All brackets stay in stack.
+
+O(n)
+Pattern
+Stack
+Similar Problems
+Min Stack
+Daily Temperatures
+Next Greater Element
+Largest Rectangle in Histogram
+Evaluate Reverse Polish Notation
