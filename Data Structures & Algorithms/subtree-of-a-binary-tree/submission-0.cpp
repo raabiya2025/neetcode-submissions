@@ -31,3 +31,23 @@ bool isSameTree(TreeNode* p, TreeNode* q) {
         
     }
 };
+Pattern
+DFS Search + Same Tree.
+Approach
+At every node:
+Check if current subtree equals subRoot.
+Otherwise search left.
+Otherwise search right.
+Key Point
+Uses two recursive functions:
+isSame() → compares trees.
+isSubtree() → searches the main tree.
+Time
+O(m × n)
+Space
+O(h) (recursion stack)
+Common Mistakes
+Comparing only root values.
+Calling isSubtree(root, subRoot) again (infinite recursion).
+Calling isSame(root->left, subRoot) instead of isSame(root, subRoot).
+Using && instead of ||.
