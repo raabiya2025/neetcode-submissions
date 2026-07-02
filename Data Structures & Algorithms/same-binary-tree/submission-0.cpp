@@ -23,3 +23,22 @@ public:
         
     }
 };
+Pattern
+Tree DFS (Recursion)
+Compare two trees simultaneously.
+Approach
+Compare current nodes.
+If both NULL → same.
+If one NULL → different.
+If values differ → different.
+Recursively compare left AND right subtrees.
+Key Point
+Use && because both subtrees must match.
+Time
+O(n)
+Space
+O(h) (recursion stack)
+Common Mistakes
+Forgetting NULL base cases.
+Accessing node->val before checking NULL.
+Using || instead of &&.
