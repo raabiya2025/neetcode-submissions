@@ -19,7 +19,18 @@ Solve Two Sum on the remaining part of the array.
 Sorting enables efficient pointer movement.
 Skip duplicates to avoid repeated triplets.
     
-    
+Time Complexity
+Sorting → O(n log n)
+Outer loop → O(n)
+Two pointers for each fixed element → O(n)
+
+Overall:
+
+O(n²)
+Space Complexity
+O(1)
+
+(Excluding the output array.)    
     
     
     
